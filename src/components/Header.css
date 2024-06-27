@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+}
+header{
+    background-color: rgb(44, 44, 44);
+    width: 100%;
+    color: #fafafa;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+.navigation{
+    display: flex;
+    gap: 30px;
+}
