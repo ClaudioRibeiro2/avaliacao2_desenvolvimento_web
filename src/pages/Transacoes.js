@@ -1,5 +1,6 @@
 import './Transacoes.css'
 import Tabela from "../components/Tabela";
+import { useEffect } from 'react';
 
 const Transacoes = () => {
     const lista = [
@@ -24,6 +25,11 @@ const Transacoes = () => {
         { codigo: 19, descricao: 'Curso online', entrada: 0.00, saida: 250.00, total: -250.00 },
         { codigo: 20, descricao: 'Doação', entrada: 0.00, saida: 50.00, total: -50.00 },
         ];
+
+    useEffect(() => {
+        localStorage.setItem('lista', JSON.stringify(lista));
+    },[]);
+
     return (
         <main>
             <h1 className="transacoesTitle">Transações</h1>

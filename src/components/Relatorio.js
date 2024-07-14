@@ -1,4 +1,10 @@
+import { useEffect } from "react"
+
 const Relatorio = () => {
+    // Executa antes de componentizar
+    useEffect(() => {
+        localStorage.getItem('lista' || []);
+    },[]);
     return (
         <>
             <h1>Total de Entradas: </h1>
